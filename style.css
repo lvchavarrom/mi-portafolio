@@ -1,33 +1,119 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #0f172a;
-    color: #f8fafc;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
-.container {
+body {
+    background-color: #fdf4f7; /* Fondo general rosado ultra claro */
+    color: #4a4046; /* Texto principal en gris/marrón suave muy legible */
+    line-height: 1.6;
+    padding: 20px;
+}
+header {
+    max-width: 900px;
+    margin: 40px auto;
+    background: #ffffff; /* Fondo blanco limpio para la tarjeta principal */
+    padding: 40px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    box-shadow: 0 10px 25px rgba(236, 72, 153, 0.08); /* Sombra suave rosada */
+    border: 1px solid #fbcfe8;
+}
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: #fce7f3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    color: #db2777;
+    border: 3px solid #f472b6; /* Bordes rosados aesthetic */
+    flex-shrink: 0;
+    overflow: hidden;
+}
+.profile-pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.header-info h1 {
+    font-size: 2.2rem;
+    color: #db2777; /* Título principal en rosado elegante */
+    margin-bottom: 10px;
+}
+.header-info p {
+    color: #6b7280;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+main {
+    max-width: 900px;
+    margin: 0 auto;
+}
+section {
+    background: #ffffff; /* Tarjetas de secciones en blanco puro */
+    margin-bottom: 30px;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 4px 15px rgba(236, 72, 153, 0.05);
+    border: 1px solid #fbcfe8;
+}
+h2 {
+    color: #db2777; /* Subtítulos en rosado */
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    border-bottom: 2px solid #fce7f3; /* Línea divisoria muy suave */
+    padding-bottom: 8px;
+}
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 15px;
+}
+.skill-card {
+    background: #fdf2f8; /* Tarjetas de habilidades en rosado pastel muy clarito */
+    padding: 12px;
     text-align: center;
-    background: #1e293b;
-    padding: 2rem;
-    border-radius: 12px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    font-weight: 500;
+    color: #9d174d;
+    border: 1px solid #fbcfe8;
 }
-
-button {
-    background-color: #38bdf8;
-    color: #0f172a;
+.skill-card.learning {
+    border-color: #f59e0b; /* Mantiene el toque ámbar para lo que estás aprendiendo */
+    background: #fffbeb;
+    color: #b45309;
+}
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+.project-card {
+    background: #fdf2f8; /* Fondo suave para los proyectos */
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #fbcfe8;
+}
+.project-card h3 {
+    color: #db2777;
+    margin-bottom: 8px;
+}
+.btn {
+    background: #db2777; /* Botón en rosado vibrante */
+    color: white;
     border: none;
     padding: 10px 20px;
-    font-weight: bold;
-    border-radius: 6px;
+    font-size: 1rem;
+    border-radius: 8px;
     cursor: pointer;
-    margin-top: 1rem;
+    transition: background 0.2s;
 }
-
-button:hover {
-    background-color: #0ea5e9;
+.btn:hover {
+    background: #be185d; /* Rosado más oscuro al pasar el ratón */
 }
