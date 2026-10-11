@@ -3,102 +3,181 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Laura Vanessa Chavarro - Portafolio Full Stack</title>
-    <!-- Enlace a los estilos profesionales -->
+    <title>Laura Vanessa Chavarro - Full Stack Developer</title>
+    
+    <!-- Fuentes Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Enlace al archivo CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Cabecera y Foto -->
-    <header>
-        <div class="profile-pic">
-            <img src="foto.jpeg" alt="Laura Vanessa Chavarro">
-        </div>
-        <div class="header-info">
-            <h1>Laura Vanessa Chavarro Motta</h1>
-            <p>🚀 Desarrolladora Junior & Futura Full Stack | Construyendo soluciones tecnológicas eficientes.</p>
-            
-            <!-- Botón de Ver Hoja de Vida -->
-            <div>
-                <a href="HV_LAURA.pdf" target="_blank" class="btn" style="text-decoration: none; display: inline-block;">📄 Ver Hoja de Vida</a>
+    <div class="container">
+        <!-- Header Principal -->
+        <header class="header">
+            <div class="profile-pic">
+                <img src="foto.png" alt="Laura Vanessa Chavarro Motta">
             </div>
-        </div>
-    </header>
-
-    <main>
-        <!-- Sección de Contacto Independiente -->
-        <section>
-            <h2>Contacto</h2>
-            <div style="display: flex; flex-direction: column; gap: 10px; color: #4a4046; font-size: 1rem;">
-                <p>📧 <strong>Correo:</strong> vanessa16motta@gmail.com</p>
-                <p>📱 <strong>Teléfono / WhatsApp:</strong> +57 3144371672</p>
-                <p>📍 <strong>Ubicación:</strong> Oporapa, Huila - Colombia</p>
-            </div>
-        </section>
-
-        <!-- Sobre mí -->
-        <section>
-            <h2>Sobre mí</h2>
-            <p>Apasionada por la tecnología con experiencia sólida en desarrollo de software junior y soporte técnico. Me caracterizo por mi organización, actitud positiva y atención al detalle. Cuento con sólidas habilidades para aportar estructura y seguimiento operativo en entornos de trabajo, destacando por un fuerte sentido de la responsabilidad y capacidad de aprendizaje continuo.</p>
-        </section>
-
-        <!-- Tecnologías -->
-        <section>
-            <h2>Tecnologías y Habilidades</h2>
-            <h3 style="font-size: 1.1rem; color: #db2777; margin: 15px 0 10px;">🛠️ Manejo actual:</h3>
-            <div class="skills-grid">
-                <div class="skill-card">Laravel</div>
-                <div class="skill-card">PHP</div>
-                <div class="skill-card">SQL</div>
-                <div class="skill-card">PostgreSQL</div>
-                <div class="skill-card">MongoDB</div>
-                <div class="skill-card">Node.js</div>
-            </div>
-
-            <h3 style="font-size: 1.1rem; color: #b45309; margin: 25px 0 10px;">📚 En aprendizaje activo:</h3>
-            <div class="skills-grid">
-                <div class="skill-card learning">React</div>
-                <div class="skill-card learning">Angular</div>
-                <div class="skill-card learning">Python</div>
-                <div class="skill-card learning">Java / Spring Boot</div>
-            </div>
-        </section>
-
-        <!-- Experiencia Profesional (Enfocada en Desarrollo) -->
-        <section>
-            <h2>Experiencia Profesional</h2>
-            
-            <div style="margin-bottom: 25px;">
-                <h3 style="color: #db2777; font-size: 1.2rem;">Desarrollador Junior — SG SST APP SAS</h3>
-                <p style="color: #94a3b8; font-size: 0.85rem; margin-bottom: 8px;">Junio 2021 - Junio 2025</p>
-                <p style="color: #4a4046; font-size: 0.95rem;">Como Desarrollador Junior en SG SST APP, fui responsable de la programación de nuevas funcionalidades en la plataforma SGSST-APP según los requisitos de la gerencia, así como del ajuste, mantenimiento y actualización del sitio web de SIE Consultores de Colombia.</p>
-                <p style="color: #4a4046; font-size: 0.95rem; margin-top: 8px;">Desarrollé herramientas y funcionalidades específicas utilizando tecnologías clave como <strong>Laravel, PHP y SQL</strong>, garantizando el correcto funcionamiento y optimización de bases de datos, además de brindar soporte técnico para plataformas y sitios web bajo la normatividad vigente.</p>
-            </div>
-
-            <div style="margin-bottom: 15px;">
-                <h3 style="color: #db2777; font-size: 1.2rem;">Pasante de desarrollo de software — SENA</h3>
-                <p style="color: #94a3b8; font-size: 0.85rem; margin-bottom: 8px;">Febrero 2020 - Octubre 2020</p>
-                <p style="color: #4a4046; font-size: 0.95rem;">Administración y soporte para el software de Gastronomía y el sistema de Control de Acceso del Centro de Capacitación. Desarrollo de requisitos funcionales para sistemas de información, diseño de bases de datos, modelos entidad-relación y creación de maquetas orientadas a la optimización de procesos de gestión.</p>
-            </div>
-        </section>
-
-        <!-- Proyectos -->
-        <section>
-            <h2>Proyectos</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <h3>Mi Portafolio Web</h3>
-                    <p>Sitio web personal desarrollado con HTML, CSS y TypeScript, estructurado profesionalmente y desplegado en GitHub Pages.</p>
-                </div>
-                <div class="project-card">
-                    <h3>Sistema Integral de Gestión (Backend)</h3>
-                    <p>Arquitectura backend modular desarrollada con Node.js, que incluye control de autenticación, gestión de citas, locales, sedes, pagos, personal, reportes y pasarela de WhatsApp.</p>
+            <div class="header-info">
+                <span class="subtitle">Desarrolladora Full Stack</span>
+                <h1>Laura Vanessa<br>Chavarro Motta</h1>
+                <p class="description">Construyendo soluciones tecnológicas eficientes, robustas y escalables con un enfoque en código limpio y arquitectura sólida.</p>
+                
+                <div class="actions">
+                    <a href="HV_LAURA.pdf" target="_blank" class="btn btn-primary">Ver Hoja de Vida</a>
+                    <a href="#contacto" class="btn btn-secondary">Contacto</a>
                 </div>
             </div>
-        </section>
-    </main>
+        </header>
 
-    <!-- Enlazamos la lógica en TypeScript / JS -->
+        <main>
+            <!-- Sobre Mí -->
+            <section class="section">
+                <h2>Sobre mí</h2>
+                <p>Apasionada por la tecnología con experiencia sólida en desarrollo de software y soporte técnico. Me caracterizo por mi organización, atención al detalle y capacidad para aportar estructura operativa en entornos exigentes. Cuento con alto sentido de responsabilidad y capacidad de aprendizaje continuo.</p>
+            </section>
+
+            <!-- Experiencia Profesional -->
+            <section class="section">
+                <h2>Experiencia Profesional</h2>
+                
+                <div class="timeline-item">
+                    <div class="timeline-header">
+                        <h3>Desarrolladora Junior — SG SST APP SAS</h3>
+                        <span class="date">Jun 2021 — Jun 2025</span>
+                    </div>
+                    <p>Programación de nuevas funcionalidades en la plataforma SGSST-APP según requisitos de la gerencia. Mantenimiento, optimización y actualización del sitio web SIE Consultores de Colombia.</p>
+                    <p>Desarrollo e integración de herramientas utilizando <strong>Laravel, PHP y SQL</strong>, garantizando el óptimo rendimiento de bases de datos y brindando soporte técnico continuo bajo la normatividad vigente.</p>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-header">
+                        <h3>Pasante de Desarrollo de Software — SENA</h3>
+                        <span class="date">Feb 2020 — Oct 2020</span>
+                    </div>
+                    <p>Administración y soporte para el software de Gastronomía y Control de Acceso. Levantamiento de requerimientos funcionales, diseño de bases de datos (E-R) y prototipado enfocado en la optimización de procesos de gestión.</p>
+                </div>
+            </section>
+
+            <!-- Tecnologías y Habilidades -->
+            <section class="section">
+                <h2>Tecnologías & Habilidades</h2>
+                
+                <div class="skills-wrapper">
+                    <div class="skill-category">
+                        <h3>Stack Principal</h3>
+                        <div class="skills-grid">
+                            <span class="skill-tag">Laravel</span>
+                            <span class="skill-tag">PHP</span>
+                            <span class="skill-tag">SQL</span>
+                            <span class="skill-tag">PostgreSQL</span>
+                            <span class="skill-tag">MongoDB</span>
+                            <span class="skill-tag">Node.js</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3>En Aprendizaje Activo</h3>
+                        <div class="skills-grid">
+                            <span class="skill-tag learning">React</span>
+                            <span class="skill-tag learning">Angular</span>
+                            <span class="skill-tag learning">Python</span>
+                            <span class="skill-tag learning">Java / Spring Boot</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Proyectos Destacados (Con Pestañas) -->
+            <section class="section">
+                <h2>Proyectos Destacados</h2>
+
+
+          
+                <!-- Contenedor de Proyectos -->
+                <div class="projects-grid">
+                    <article class="project-card" data-category="backend">
+                        <div class="project-header">
+                            <h3>Sistema Integral de Gestión (Backend)</h3>
+                            <span class="project-badge">Backend</span>
+                        </div>
+                        <p>Arquitectura backend modular desarrollada con Node.js. Incluye autenticación JWT, gestión de citas, locales, sedes, pagos, personal, reportes y pasarela de WhatsApp.</p>
+                        <div class="tags">
+                            <span>Node.js</span>
+                            <span>Express</span>
+                            <span>MongoDB</span>
+                        </div>
+                    </article>
+
+                    <article class="project-card" data-category="fullstack">
+                        <div class="project-header">
+                            <h3>Plataforma Web Sie Consultores</h3>
+                            <span class="project-badge">Full Stack</span>
+                        </div>
+                        <p>Mantenimiento, optimización e implementación de nuevas funcionalidades en sitio web corporativo con gestión de bases de datos relacionales.</p>
+                        <div class="tags">
+                            <span>Laravel</span>
+                            <span>PHP</span>
+                            <span>PostgreSQL</span>
+                        </div>
+                    </article>
+
+                    <article class="project-card" data-category="fullstack">
+                        <div class="project-header">
+                            <h3>Portafolio Profesional Minimalista</h3>
+                            <span class="project-badge">Web</span>
+                        </div>
+                        <p>Plataforma web personal desarrollada con HTML5, CSS3 y TypeScript, bajo estándares modernos de diseño minimalista y despliegue continuo.</p>
+                        <div class="tags">
+                            <span>HTML/CSS</span>
+                            <span>TypeScript</span>
+                        </div>
+                    </article>
+
+                    <article class="project-card" data-category="desarrollo">
+                        <div class="project-header">
+                            <h3>SaaS / API en Laravel & Vue</h3>
+                            <span class="project-badge">Próximamente</span>
+                        </div>
+                        <p>Proyecto en desarrollo enfocado en arquitectura limpia, testing automatizado e integración de pagos en línea.</p>
+                        <div class="tags">
+                            <span>Laravel</span>
+                            <span>Vue.js</span>
+                            <span>Tailwind</span>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Contacto -->
+            <section id="contacto" class="section">
+                <h2>Contacto</h2>
+                <div class="contact-grid">
+                    <div class="contact-item">
+                        <span class="label">Correo Electrónico</span>
+                        <a href="mailto:vanessa16motta@gmail.com">vanessa16motta@gmail.com</a>
+                    </div>
+                    <div class="contact-item">
+                        <span class="label">Teléfono / WhatsApp</span>
+                        <a href="https://wa.me/573144371672" target="_blank">+57 314 437 1672</a>
+                    </div>
+                    <div class="contact-item">
+                        <span class="label">Ubicación</span>
+                        <p>Oporapa, Huila — Colombia</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p>© Laura Vanessa Chavarro Motta. Todos los derechos reservados.</p>
+        </footer>
+    </div>
+
+    <!-- Script JavaScript -->
     <script src="main.js"></script>
 </body>
 </html>
